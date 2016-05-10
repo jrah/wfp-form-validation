@@ -1,0 +1,27 @@
+{
+  "name": "wfp-form-validation",
+  "authors": [
+    "jrah <jjames.home@gmail.com>"
+  ],
+  "description": "Test form validation plugins",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    "wfp-ui": "wfp/ui#^0.8.0",
+    "validator-js": "^5.2.0",
+    "validate": "validate.js#^0.9.0"
+  }
+}

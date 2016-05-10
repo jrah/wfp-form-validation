@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validator.js</title>
+  <link rel="stylesheet" href="bower_components/wfp-ui/dist/css/wfpui.css">
+</head>
+<body>
+  <header class="wfp-header-int">
+    <div class="wfp-grid wfp-wrapper">
+      <div class="header--container">
+        <h1 class="header--title">
+          <a href="#" class="header--logo">Form validation using <code>validator.js</code></a>
+        </h1>
+      </div>
+    </div>
+</header>
+<div class="wfp-wrapper">
+  <form class="preview simple wfp-form--stacked wfp-grid" action="self">
+    <div class="wfp-grid">
+      <div class="wfp-u-1-2 wfp-box--flat">
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name">
+      </div>
+      <div class="wfp-u-1-2 wfp-box--flat">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email">
+      </div>
+    </div>
+    <div class="wfp-form--group">
+      <label for="selection">Pick a subject:</label>
+      <select id="selection">
+        <option value="1" selected>Option #1</option>
+        <option value="2">Option #2</option>
+        <option value="3">Option #3</option>
+      </select>
+    </div>
+    <div class="wfp-form--group">
+      <label for="message">Your message:</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div class="wfp-form--group">
+      <div class="wfp-checkbox">
+        <input type="checkbox" id="sample-1">
+        <label for="sample-1">I would like to be contacted, if necessary.</label>
+      </div>
+    </div>
+    <fieldset class="wfp-form--group">
+      <legend>Please select preferred contact method:</legend>
+      <div class="wfp-radio">
+        <input type="radio" id="sample-2" name="radio-grp" checked>
+        <label for="sample-2">by email</label>
+      </div>
+      <div class="wfp-radio">
+        <input type="radio" id="sample-3" name="radio-grp">
+        <label for="sample-3">by fax (if you still have one)</label>
+      </div>
+      <div class="wfp-radio">
+        <input type="radio" id="sample-4" name="radio-grp">
+        <label for="sample-4">by pigeon (may take a few days to reach you)</label>
+      </div>
+    </fieldset>
+    <div class="wfp-form--actions">
+      <button class="wfp-btn--primary" type="submit">Send message</button>
+      <button class="wfp-btn">Cancel</button>
+      <span class="wfp-form--msg">By sending this form you agree to our <a href="#">privacy policy</a>.</span>
+    </div>
+  </form>
+</div>
+  <script src="bower_components/validator-js/validator.min.js"></script>
+</body>
+</html>
